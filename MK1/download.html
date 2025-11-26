@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download | Mortal Kombat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Baixar Curiosidades</h1>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="download-section">
+    <h2>Baixe o PDF com as Curiosidades de Mortal Kombat</h2>
+    <button id="baixarPDF">Baixar Curiosidades</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Mortal Kombat Fan Page</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("baixarPDF").addEventListener("click", () => {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.text("Curiosidades sobre Mortal Kombat:", 10, 20);
+      const curiosidades = [
+        "1. O primeiro Mortal Kombat foi lançado em 1992 e chocou o mundo com sua violência gráfica.",
+        "2. Scorpion e Sub-Zero foram criados usando o mesmo modelo de personagem.",
+        "3. O 'Finish Him!' se tornou uma marca registrada da franquia.",
+        "4. O jogo ajudou a criar a classificação indicativa para games.",
+      ];
+
+      let y = 30;
+      curiosidades.forEach(texto => {
+        doc.text(texto, 10, y);
+        y += 10;
+      });
+
+      doc.save("Curiosidades_MortalKombat.pdf");
+    });
+  </script>
+</body>
+</html>

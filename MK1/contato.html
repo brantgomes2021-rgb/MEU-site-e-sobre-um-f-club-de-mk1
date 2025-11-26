@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Blog MK1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======== CABEÇALHO ======== -->
+    <header>
+        <h1>Formulário de Contato - MK1</h1>
+        <p>Entre em contato com o nosso Fã Club de Mortal Kombat!</p>
+    </header>
+
+    <!-- ======== MENU ======== -->
+    <nav>
+        <div class="menu-container">
+            <h2 class="logo">MK1 Blog</h2>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul id="menu">
+                <li><a href="Pagina.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+                <li><a href="download.html">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======== CONTEÚDO PRINCIPAL ======== -->
+    <main>
+        <h2>Formulário de Contato</h2>
+        <p>Preencha os campos abaixo e envie suas informações para o nosso time de guerreiros MK!</p>
+
+        <form class="formulario">
+
+            <label for="nome">Nick de Usuário:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: ScorpionBR" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@mk1.com" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="********" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="10" max="99" placeholder="Digite sua idade">
+
+            <p>Qual seu estilo de jogo preferido?</p>
+            <div class="opcoes-radio">
+                <label><input type="radio" name="genero_jogo" value="luta"> Luta</label>
+                <label><input type="radio" name="genero_jogo" value="tiro"> Tiro</label>
+                <label><input type="radio" name="genero_jogo" value="esporte"> Esporte</label>
+            </div>
+
+            <p>Como você se considera jogando MK1?</p>
+            <div class="opcoes-checkbox">
+                <label><input type="checkbox" name="estilo" value="agressivo"> Agressivo</label>
+                <label><input type="checkbox" name="estilo" value="moderado"> Moderado</label>
+                <label><input type="checkbox" name="estilo" value="defensivo"> Defensivo</label>
+            </div>
+
+            <label for="mensagem">Conte um pouco sobre suas conquistas no jogo:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Fale sobre suas vitórias, combos e troféus..."></textarea>
+
+            <div class="botoes-form">
+                <button type="submit">Enviar Formulário</button>
+                <button type="reset">Limpar Campos</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- ======== RODAPÉ ======== -->
+    <footer>
+        <p>&copy; 2025 Blog MK1. Todos os direitos reservados.</p>
+        <p>Obrigado por entrar em contato com o nosso clã!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Contato Simples</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Mortal Kombat</h1>
+        <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+    </header>
+
+    <form>
+
+        <label for="nome">Nicks Usuario:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui"><br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"><br><br>
+
+
+        <label for="senha">password:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="********"><br><br>
+
+
+        <label for="idade">age:</label><br>
+        <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+
+
+        <p>What is your favorite game genre??</p>
+        <input type="radio" id="acao" name="genero_filme" value="acao">
+        <label for="acao">fight</label><br>
+        <input type="radio" id="comedia" name="genero_filme" value="comedia">
+        <label for="comedia">shot</label><br>
+        <input type="radio" id="drama" name="genero_filme" value="drama">
+        <label for="drama">soccer</label><br><br>
+
+
+        <p>What style of player are you??</p>
+        <input type="checkbox" id="python" name="linguagem" value="python">
+        <label for="python">aggressive</label><br>
+        <input type="checkbox" id="java" name="linguagem" value="java">
+        <label for="java">moderate</label><br>
+        <input type="checkbox" id="html_css" name="linguagem" value="html_css">
+        <label for="html_css">fearful</label><br><br>
+
+
+        <label for="mensagem">Write some achievements in games?:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Clear Fields</button>
+    </form>
+
+    <footer>
+        <p>Thank you for your contact!</p>
+    </footer>
+
+</body>
+</html>
